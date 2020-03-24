@@ -1,0 +1,18 @@
+<h2>Detalhes do Funcionario</h2>
+
+<hr/>
+<div *ngIf="funcionario">
+  <div>
+    <label><b>Nome: </b></label> {{funcionario.nome}}
+  </div>
+  <div>
+    <label><b>Sobrenome: </b></label> {{funcionario.sobrenome}}
+  </div>
+  <div>
+    <label><b>Email: </b></label> {{funcionario.email}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Voltar para a listagem</button><br>

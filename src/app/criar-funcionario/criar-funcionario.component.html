@@ -1,0 +1,26 @@
+<h3>Criar Funcionario</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input type="text" class="form-control" id="nome" required [(ngModel)]="funcionario.nome" name="nome">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Sobrenome</label>
+      <input type="text" class="form-control" id="sobrenome" required [(ngModel)]="funcionario.sobrenome" name="sobrenome">
+    </div>
+
+    <div class="form-group">
+      <label for="name">E-mail</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="funcionario.email" name="email">
+    </div>
+
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Sucesso!</h4>
+  <!-- <button class="btn btn-success" (click)="newFuncionario()">Add</button> -->
+</div>
